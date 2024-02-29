@@ -1,0 +1,78 @@
+*{
+  padding: 0;
+  margin: 0;
+  }
+body{
+  background: seagreen;
+  background: url("1.jpg");
+  }
+.container{
+  background: blue;
+  /*position: relative;*/
+  backdrop-filter: blur(30px);
+  text-align: center;
+  margin: 40px;
+  border-radius: 20px;
+  height: 50vh;
+  color: white;
+  box-shadow: 5px 5px 20px black;
+}
+.search-box{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border-bottom: 1px solid grey;
+}
+.search-box input{
+  border: 0;
+  outline: none;
+  color: white;
+  background: transparent;
+  }
+.search-box input::placeholder{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  }
+.temperature{
+  font-size: 40px;
+}
+.humidity,
+.wind{
+  display: flex;
+  padding: 10px;
+  text-align: left;
+  gap: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+.weather-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.bx{
+  outline: none;
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+}
+h1{
+  text-align: center;
+  margin: 10px;
+  text-shadow: 4px 4px 10px black;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 30px;
+}
+@media screen and(min-width: 990px){
+  *{
+    padding: 50px;
+  }
+}
